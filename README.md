@@ -1,6 +1,7 @@
 ﻿# Olá, Bem vindo ao meu projeto de portfólio.
 
-![readme-image](https://github.com/jaoboaventura/portfolio_online/assets/128103660/e74e3c96-be8e-4ba3-8f5b-c43d27fbd189)
+![README-image](https://github.com/jaoboaventura/portfolio_online/assets/128103660/3b18eb63-e430-48c0-90da-704a63b4f775)
+
 
 ## Ferramentas utilizadas:
 
