@@ -205,3 +205,33 @@ body {
         width: auto;
     }
 }
+/*
+@media (max-width: 700px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    
+    .cabecalho__menu {
+        justify-content: center;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 10%;
+    }
+
+    .apresentacao__cv {
+        flex-direction: column;
+        padding: 10%;
+    }
+    
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao__imagem {
+        width: 110%;
+    }
+} */
