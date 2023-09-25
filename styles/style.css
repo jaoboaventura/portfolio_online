@@ -152,15 +152,25 @@ body {
     height: 100%;
 }
 
+.apresentacao__links__navegacao__imagens__cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    height: 100%;
+}
+
 .apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
 }
 
 .apresentacao__imagem {
-    width: 50%;
+    width: auto;
 }
 
 .rodape {
+    width: 100%;
     padding: 24px;
     background-color: var(--cor-quaternaria);
     color: var(--cor-secundaria);
@@ -176,6 +186,11 @@ body {
 .apresentacao__conteudo__texto a {
     text-decoration: none;
     color: var(--cor-terciaria);
+}
+
+ul {
+    list-style-type:circle;
+    list-style-position:inside;
 }
 
 @media (max-width: 1300px) {
@@ -205,10 +220,10 @@ body {
         width: auto;
     }
 }
-/*
+
 @media (max-width: 700px) {
     .cabecalho {
-        padding: 10%;
+        padding: 8%;
     }
     
     .cabecalho__menu {
@@ -219,12 +234,36 @@ body {
 
     .apresentacao {
         flex-direction: column-reverse;
-        padding: 10%;
+        padding: 8%;
+    }
+
+    .apresentacao__links__navegacao {
+        width: 90%;
+        font-size: 1.3rem;
+        font-weight: 600;
+        padding: 21.5px 0;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .apresentacao__links__navegacao__curriculo {
+        width: 120%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: auto;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .apresentacao__links__navegacao__imagens__cv {
+        width: 9%;
     }
 
     .apresentacao__cv {
         flex-direction: column;
-        padding: 10%;
+        padding: 8%;
     }
     
     .apresentacao__conteudo {
@@ -234,4 +273,4 @@ body {
     .apresentacao__imagem {
         width: 110%;
     }
-} */
+}
