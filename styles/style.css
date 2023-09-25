@@ -35,7 +35,7 @@ body {
     color: var(--cor-terciaria);
     font-family: var(--fonte-secundaria);
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -45,13 +45,22 @@ body {
 
 .apresentacao {
     padding: 8% 15%;
+    gap: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__cv {
+    padding: 8% 15%;
+    gap: 82px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -70,7 +79,7 @@ body {
 }
 
 .apresentacao__conteudo__titulo {
-    font-size: 50px;
+    font-size: 3.12rem;
     font-family: var(--fonte-primaria);
     font-weight:normal;
 }
@@ -80,7 +89,7 @@ body {
 }
 
 .apresentacao__conteudo__texto {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }
 
@@ -95,18 +104,18 @@ body {
 .apresentacao__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.apresentacao__links__link {
+.apresentacao__links__navegacao {
     border-radius: 8px;
     border: 2px solid var(--cor-terciaria); /* Primeiro item: espessura da borda ; Segundo item: estilo do tracejado (linha, pontilhado, etc) ; Terceiro item: cor da borda */
-    width: 450px;
+    width: 50%;
     text-align: center;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     display: flex;
@@ -114,7 +123,27 @@ body {
     gap: 16px;
 }
 
-.apresentacao__links__link__imagens {
+.apresentacao__links__navegacao__curriculo {
+    border-radius: 8px;
+    border: 2px solid var(--cor-terciaria);
+    width: 130%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.apresentacao__links__navegacao__curriculo:hover {
+    background-color: var(--cor-hover);
+}
+
+.apresentacao__links__navegacao__imagens {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -123,8 +152,12 @@ body {
     height: 100%;
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
+}
+
+.apresentacao__imagem {
+    width: 50%;
 }
 
 .rodape {
@@ -133,7 +166,7 @@ body {
     color: var(--cor-secundaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .rodape b {
@@ -143,4 +176,32 @@ body {
 .apresentacao__conteudo__texto a {
     text-decoration: none;
     color: var(--cor-terciaria);
+}
+
+@media (max-width: 1300px) {
+    .cabecalho {
+        padding: 6%;
+    }
+    
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__cv {
+        flex-direction: column;
+        padding: 5%;
+    }
+    
+    .apresentacao__conteudo {
+        width: auto;
+    }
+
+    .apresentacao__imagem {
+        width: auto;
+    }
 }
