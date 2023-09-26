@@ -193,7 +193,7 @@ ul {
     list-style-position:inside;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1500px) {
     .cabecalho {
         padding: 6%;
     }
